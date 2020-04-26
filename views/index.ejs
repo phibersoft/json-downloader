@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>json-downloader</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        min-width: 400px;
+      }
+      input,
+      button {
+        width: 100%;
+      }
+      input {
+        font-size: 12px;
+        height: 2em;
+        padding: 4px;
+      }
+      input:focus {
+        border: 2px solid black;
+      }
+      button {
+        background: black;
+        color: white;
+        height: 3em;
+        margin-top: 12px;
+        outline: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form method="GET" action="./download">
+        <input type="text" name="url" placeholder="Json URL" />
+        <button type="submit">SEND!</button>
+      </form>
+    </div>
+  </body>
+</html>
